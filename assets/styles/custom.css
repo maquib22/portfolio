@@ -117,7 +117,31 @@ color: var(--gray);
 }
 
 .works-section {
+    position: relative;
+    overflow: hidden;
+}
 
+.works-section::before {
+    content: '';
+    background: url(../img/svg/dots.svg) no-repeat;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: -1%;
+    top: 30%;
+}
+
+.works-section::after {
+    content: '';
+    width: 90px;
+    height: 140px;
+    position: absolute;
+    right: -1%;
+    top: 50%;
+    background-color: var(--bg);
+    border: 1px solid var(--gray);
+    overflow: hidden;
+    z-index: -11;
 }
 
 .works-section .heading .line {
@@ -143,6 +167,80 @@ color: var(--gray);
 }
 .project-card .project-lang {
     border: 1px solid var(--gray);
-    
+}
 
+.skills-section {
+
+}
+
+
+.skills-section .heading .line {
+    width: 400px;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+.skills-section .left {
+    max-width: 30%;
+    width: 100%;
+    min-height: 280px;
+    position: relative;
+}
+
+.skills-section .left .dots::before{
+    content: '';
+    background: url(../img/svg/dots.svg) no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+}
+
+.skills-section .left .dots::after{
+    content: '';
+    background: url(../img/svg/dots.svg) no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20%;
+    bottom: 0%;
+}
+
+.skills-section .left .square::before{
+    content: '';
+    width: 86px;
+    height: 86px;
+    border: 1px solid var(--gray);
+    position: absolute;
+    right: 20%;
+}
+
+.skills-section .left .square::after{
+    content: '';
+    width: 52px;
+    height: 52px;
+    border: 1px solid var(--gray);
+    position: absolute;
+    right: 0%;
+    bottom: 10%;
+}
+
+.skills-section .left .logo::after{
+    content: '';
+    background: url(../img/svg/logo-outline.svg) no-repeat;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    left: 10%;
+    bottom: -10%;
+}
+
+.skills-section .right {
+    max-width: 70%;
+    width: 100%;
+}
+
+.skills-section .right .card{
+    width: 100%;
+    border: 1px solid var(--gray);
 }
