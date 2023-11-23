@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/styles/main.css">
     <title>Md Aaquib Asrar</title>
     <script src="tailwind.config.js"></script>
+    <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                 <img src="assets/img/svg/logo.svg" alt="">
                 <h1 class=" ml-1">AAQUIB</h1>
             </div>
-            <nav>
+            <nav class="nav">
                 <ul class="flex gap-5">
                     <li><a href="#home" class="hover:text-white active:font-medium"><span class="text-primary">#</span>home</a>
                     </li>
@@ -32,6 +33,27 @@
                     <li><a href="#" class="hover:text-white active:font-medium"><span
                                 class="text-primary">#</span>contacts</a></li>
                     <li><a  href="assets/Md Aaquib Asrar Resume.pdf" download="aaquib_resume" class="hover:text-white active:font-medium"><span
+                                class="text-primary">#</span>resume</a></li>
+                </ul>
+            </nav>
+
+            <nav class="sm-nav lg:hidden ">
+                <button class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </button>
+                <div class="bg-cover"></div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="hover:text-white active:font-medium nav-link"><span class="text-primary">#</span>home</a>
+                    </li>
+                    <li class="nav-item"><a href="#works" class="hover:text-white active:font-medium nav-link"><span class="text-primary">#</span>works</a>
+                    </li>
+                    <li class="nav-item"><a href="#aboutMe" class="hover:text-white active:font-medium nav-link"><span
+                                class="text-primary">#</span>about-me</a></li>
+                    <li class="nav-item"><a href="#" class="hover:text-white active:font-medium nav-link"><span
+                                class="text-primary">#</span>contacts</a></li>
+                    <li class="nav-item"><a  href="assets/Md Aaquib Asrar Resume.pdf" download="aaquib_resume" class="hover:text-white active:font-medium nav-link"><span
                                 class="text-primary">#</span>resume</a></li>
                 </ul>
             </nav>
