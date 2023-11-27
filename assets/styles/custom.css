@@ -450,6 +450,6 @@ color: var(--gray);
     }
 
     .abouts-section .left{
-        width: 100%;
+        width: 100%; 
     }
 }
