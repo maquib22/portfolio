@@ -345,7 +345,7 @@ color: var(--gray);
     width: 45px;
     height: 45px;
     position: fixed;
-    top: 35px;
+    top: 15px;
     right: 35px;
     z-index: 100;
     border-radius: 50%;
@@ -400,5 +400,56 @@ color: var(--gray);
 @media (max-width: 1023px) {
     .nav {
         display: none;
+    }
+    .banner {
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .banner h2{
+        font-size: 22px;
+    }
+    .banner .left{
+        width: 100%;
+        order: 2;
+    }
+    .quote-section::after {
+        display: none;
+    }
+    .quote  {
+        font-size: 22px;
+    }
+    .works-section::before, .works-section::after {
+        display: none;
+    }
+
+    .projects {
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        max-width: 100%;
+    }
+    .project-card .card-img {
+
+    }
+    .project-card .card-img, .project-card .card-img iframe {
+        height: 400px;
+    }
+
+    .skills-section .left {
+        display: none;
+    }
+    .skills-section .right {
+        max-width: 100%;
+    }
+
+    .abouts-section .right{
+        display: none;
+    }
+
+    .abouts-section .left{
+        width: 100%;
     }
 }
